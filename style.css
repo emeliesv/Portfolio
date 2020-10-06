@@ -9,11 +9,14 @@
 .container {
   margin: 0;
   display: grid;
-  grid-template-rows: min-content auto min-content /* repeat(8, 1fr) */;
+  grid-template-rows: min-content auto min-content;
+  height: 100%;
 }
 
 /*This looks ok in desktop, but is too wide. If the idea is to do mobile-first, I need to rethink*/
 /*Only the wrapping element can have the grid-column/grid-row defined*/
+
+/*Header*/
 .header {
   border: 2px solid purple;
   display: grid;
@@ -31,11 +34,15 @@
 /*Since this is contained within the header, it's width has to be defined or it will inherit the parent-properties*/
 .top-section {
   border: 2px solid red;
+
   position: absolute;
 }
 
-.main {
+/*Main-section*/
+
+.main-wrapper {
   display: grid;
+  grid-template-rows: auto;
 }
 
 .footer {

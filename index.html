@@ -17,9 +17,16 @@
             <h1>frontend developer</h1>
             <h2>with teaching experience</h2>
         </section>
-        <img class="profile-picture" src="./DSC09522.JPG" alt="Profile picture of Emelie Svensson">
+        <img class="profile-picture" src="./assets/DSC09522.JPG" alt="Profile picture of Emelie Svensson">
+        <picture class="hero">
+            <img src="./assets/forest-small.jpg" alt="background image for mobile" />
+            <source srcset="./assets/forest-medium.jpg" media="(min-width: 768px" />
+            <!--This has mediaqueries for ipad-->
+            <source srcset="./assets/forest-large.jpg" media="(min-width: 1024px" />
+            <!--This has mediaqueries for desktop-->
+        </picture>
     </header>
-    <main class="main">
+    <main class="main-wrapper">
         <section class="summary">
             <p>Summary Summarum</p>
         </section>
@@ -29,6 +36,7 @@
         <section class="projects">
             <section class="featured">
                 <h3>Featured projects</h3>
+                <!--Put featured projects here as cards-->
             </section>
             <section class="other">
                 <h4>Other projects</h4>
