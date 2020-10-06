@@ -12,18 +12,32 @@
 <body class="container">
 
     <header class="header">
+        <!--Imported from font awesome: fa (font awesome) and styles for github, linkedin and github. link to rel=noopener noreferrer explanation: https://www.reliablesoft.net/noreferrer-noopener/-->
+        <section class="header-links">
+            <a href="" class="icon-anchor" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-linkedin"></i>
+                <span class="sr-only">LinkedIn</span>
+            </a>
+            <a href="" class="icon-anchor" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-github"></i>
+                <span class="sr-only">GitHub</span>
+            </a>
+            <a href="" class="icon-anchor" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-stack-overflow"></i>
+                <span class="sr-only">Stack Overflow</span>
+            </a>
+        </section>
+
         <section class="top-section">
             <p>Portfolio: Emelie Svensson</p>
             <h1>frontend developer</h1>
             <h2>with teaching experience</h2>
         </section>
-        <img class="profile-picture" src="./assets/DSC09522.JPG" alt="Profile picture of Emelie Svensson">
+        <div class="profile-picture"><img src="./assets/DSC09522.JPG" alt="Profile picture of Emelie Svensson"></div>
         <picture class="hero">
-            <img src="./assets/forest-small.jpg" alt="background image for mobile" />
-            <source srcset="./assets/forest-medium.jpg" media="(min-width: 768px" />
-            <!--This has mediaqueries for ipad-->
-            <source srcset="./assets/forest-large.jpg" media="(min-width: 1024px" />
-            <!--This has mediaqueries for desktop-->
+            <source srcset="./assets/forest-large.jpg" media="(min-width: 1024px)" />
+            <source srcset="./assets/forest-medium.jpg" media="(min-width: 768px)" />
+            <img src="./assets/forest-small.jpg" alt="background image of forest" />
         </picture>
     </header>
     <main class="main-wrapper">
