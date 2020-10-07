@@ -26,29 +26,25 @@
 }
 
 .hero img{
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
 }
 
-/*Work more on profile-image with object-fit/object-position*/
+
 .profile-picture-container {
   position: absolute;
-  object-fit: fill;
+  overflow: hidden;
   right: 25px;
   bottom: -10px;
   height: 150px;
   width: 150px;
   border: 2px solid #fff;
   border-radius: 50%;
-  /* width: 150px;
-  height: 150px;
-  /* object-fit: cover; */
-  /*position: absolute;
-  bottom: 0;
-  right: 60%;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  overflow: hidden; */
+}
+
+.profile-picture-container img {
+  width: 150px;
+  object-fit: cover;
 }
 
 /*Since this is contained within the header, it's width has to be defined or it will inherit the parent-properties*/
@@ -84,6 +80,11 @@
 .main-wrapper {
   display: grid;
   grid-template-rows: auto;
+  justify-content: center;
+}
+
+.main {
+  padding: 10px;
 }
 
 .background {
@@ -98,16 +99,45 @@
 h4 {
   color: /* #FA382F */#678D6D;
 }
-/*footer*/
+
+.tag-wrapper {
+  display: flex;
+}
+
+.tag {
+  background: #a2d6aa;
+  padding: 5px;
+}
+
+/*FOOTER*/
 .footer {
   display: grid;
   grid-template-rows: auto;
   background:#11423F;
   color: #fff;
+  justify-content: center;
 }
 
-/* @media (min-width: 768px) {
-  .hero img{
-    width: 100%;
+/*MEDIA QUERIES*/
+@media (min-width: 768px) {
+  .profile-picture-container {
+    height: 270px;
+    width: 270px;
   }
-} */
+
+  .profile-picture-container img {
+    width: 270px;
+  }
+  
+  .header-links {
+    right: 25px;
+    top: 15px;
+  }
+  
+  .fa {
+    font-size: 35px;
+  }
+  .top-section {
+   font-size: 25px;
+  }
+}
