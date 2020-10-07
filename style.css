@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", "Roboto", sans-serif;
 }
-
+/*Body has class of .container*/
 .container {
   margin: 0;
   display: grid;
@@ -19,15 +19,10 @@
 /*Header*/
 .header {
   color: #fff;
-  border: 2px solid purple;
   display: grid;
   grid-template-rows: repeat(3, min-content);
   position: relative;
-  align-content: center;
-}
-
-.hero {
-  padding: 0;
+  justify-items: center;
 }
 
 .hero img{
@@ -36,28 +31,52 @@
 }
 
 /*Work more on profile-image with object-fit/object-position*/
-.profile-picture {
+.profile-picture-container {
+  position: absolute;
+  object-fit: fill;
+  right: 25px;
+  bottom: -10px;
+  height: 150px;
   width: 150px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  /* width: 150px;
   height: 150px;
   /* object-fit: cover; */
-  position: absolute;
+  /*position: absolute;
   bottom: 0;
   right: 60%;
   border: 2px solid #fff;
   border-radius: 50%;
-  overflow: hidden;
-}
-
-.profile-picture img {
-  /* object-fit: cover; */
-  /* object-position: center; */
-  width: 150px;
+  overflow: hidden; */
 }
 
 /*Since this is contained within the header, it's width has to be defined or it will inherit the parent-properties*/
 .top-section {
-  border: 2px solid red;
+  width: 60%;
+  top: 10px;
+  left: 10px;
   position: absolute;
+}
+
+.header-links {
+  position: absolute;
+  right: 5px;;
+  top: 5px;
+}
+
+.fa {
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+  font-size: 20px;
+  padding: 4px 5px;
+}
+
+.icon-anchor {
+  text-decoration: none;
 }
 
 /*Main-section*/
@@ -67,9 +86,24 @@
   grid-template-rows: auto;
 }
 
+.background {
+  background:#E7EDE1 /* #BFC9B6 *//* #d3e5d6 */;
+}
+
+.heading-three{
+  color: #fff;
+  background-color: #678D6D /* #426E6D *//*  #FA382F */;
+}
+
+h4 {
+  color: /* #FA382F */#678D6D;
+}
+/*footer*/
 .footer {
   display: grid;
   grid-template-rows: auto;
+  background:#11423F;
+  color: #fff;
 }
 
 /* @media (min-width: 768px) {
