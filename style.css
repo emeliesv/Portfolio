@@ -23,13 +23,15 @@
   grid-template-rows: repeat(3, min-content);
   position: relative;
   justify-items: center;
+  height: 70vh;
 }
 
 .hero img{
   object-fit: cover;
+  overflow: hidden;
+  height: 70vh;
   width: 100%;
 }
-
 
 .profile-picture-container {
   position: absolute;
@@ -40,6 +42,7 @@
   width: 150px;
   border: 2px solid #fff;
   border-radius: 50%;
+  z-index: 2;
 }
 
 .profile-picture-container img {
@@ -83,8 +86,33 @@
   justify-content: center;
 }
 
+.summary {
+  position: relative;
+  text-indent: 11%;
+}
+
+.line {
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: darkslategray;
+  position: absolute;
+  top: 32px;
+  left: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: darkslategray;
+  position: absolute;
+  left: 30px;
+}
 .main {
   padding: 10px;
+  justify-self: center;
 }
 
 .background {
@@ -120,6 +148,10 @@ h4 {
 
 /*MEDIA QUERIES*/
 @media (min-width: 768px) {
+  .summary {
+    text-indent: 6%;
+  }
+
   .profile-picture-container {
     height: 270px;
     width: 270px;
@@ -139,5 +171,11 @@ h4 {
   }
   .top-section {
    font-size: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .summary {
+    text-indent: 3%;
   }
 }
