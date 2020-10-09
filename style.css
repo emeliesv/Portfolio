@@ -23,7 +23,7 @@
   position: relative;
   justify-items: center;
   height: 70vh;
-  background-image: url(./assets/spruce-medium.jpg);
+  background-image: linear-gradient(rgb(0,0,0, 0.2),	rgb(0,0,0, 0.1)), url(./assets/spruce-medium.jpg);
   background-position: center center;
   background-size: cover;
 }
