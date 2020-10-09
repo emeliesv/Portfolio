@@ -96,7 +96,7 @@ Make all content centered*/
   display: inline-block;
   width: 30px;
   height: 2px;
-  background-color: darkslategray;
+  background-color: #11423f;
   position: absolute;
   top: 32px;
   left: 10px;
@@ -107,7 +107,7 @@ Make all content centered*/
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: darkslategray;
+  background-color: #11423f;
   position: absolute;
   left: 30px;
 }
@@ -134,7 +134,7 @@ Make all content centered*/
 }
 
 h4 {
-  color: #678d6d;
+  color: #11423f/* #678d6d */;
 }
 
 /*NEED TO FIX: 
