@@ -28,6 +28,10 @@
   background-size: cover;
 }
 
+.bigger {
+  font-weight: 600;
+}
+
 .profile-picture-container {
   position: absolute;
   overflow: hidden;
