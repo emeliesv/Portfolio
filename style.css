@@ -96,7 +96,7 @@ Make all content centered*/
   display: inline-block;
   width: 30px;
   height: 2px;
-  background-color: #11423f;
+  background-color: #0E5848;
   position: absolute;
   top: 32px;
   left: 10px;
@@ -107,7 +107,7 @@ Make all content centered*/
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #11423f;
+  background-color: #0E5848;
   position: absolute;
   left: 30px;
 }
@@ -130,11 +130,11 @@ Make all content centered*/
 
 .heading-three {
   color: #fff;
-  background-color: #678d6d;
+  background-color: #0E5848 /* #678d6d */;
 }
 
 h4 {
-  color: #11423f/* #678d6d */;
+  color: #0E5848/* #11423f *//* #678d6d */;
 }
 
 /*NEED TO FIX: 
@@ -145,7 +145,6 @@ Add overlay to images
 .project-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
 }
 
 .project-card {
@@ -177,11 +176,29 @@ Add overlay to images
   font-size: 20px;
 }
 
+ul {
+  padding: 0;
+}
+
 li {
   list-style: none;
 }
 
+.skill-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
+}
 
+.skill-box-first {
+  grid-row-start: 1;
+}
+
+.skill-box-second {
+  grid-row-start: 2;
+}
 
 /*FOOTER*/
 .footer {
@@ -227,6 +244,7 @@ li {
   .project-container {
     grid-template-columns: 1fr 1fr;
     padding: 30px;
+    gap: 10px;
   }
 }
 
