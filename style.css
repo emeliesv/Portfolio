@@ -116,6 +116,10 @@ Make all content centered*/
   flex-wrap: wrap;
 }
 
+.not-yet-learned {
+  color: #ff0000;
+}
+
 .background {
   background: #e7ede1;
 }
@@ -136,12 +140,11 @@ Add overlay to images
 
 .project-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
+  grid-template-columns: 1fr;
+  gap: 10px;
 }
 
 .project-card {
-  grid-column: span 2;
   display: flex;
   flex-direction: column;
 }
@@ -162,8 +165,19 @@ Add overlay to images
 .tag {
   background: #a2d6aa;
   padding: 5px;
+  margin: 5px;
   color: #000;
 }
+
+.other-heading {
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+
 
 /*FOOTER*/
 .footer {
@@ -206,7 +220,13 @@ Add overlay to images
   .top-section {
     font-size: 25px;
   }
+  .project-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+  }
 }
+
+/*Add display flex to main here?*/
 
 @media (min-width: 1024px) {
   .summary {
@@ -214,5 +234,8 @@ Add overlay to images
   }
   .main {
     flex-direction: column;
+  }
+  .project-container {
+    padding: 50px;
   }
 }
