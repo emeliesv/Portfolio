@@ -135,15 +135,13 @@ Add overlay to images
 */
 
 .project-container {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
 }
 
 .project-card {
-  width: 50%;
+  grid-column: span 2;
   display: flex;
   flex-direction: column;
 }
@@ -213,5 +211,8 @@ Add overlay to images
 @media (min-width: 1024px) {
   .summary {
     text-indent: 5%;
+  }
+  .main {
+    flex-direction: column;
   }
 }
