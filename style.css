@@ -80,9 +80,6 @@
 }
 
 /*Main-section*/
-
-/*TO FIX:
-Make all content centered*/
 .main-wrapper {
   display: grid;
   grid-template-rows: auto;
@@ -123,14 +120,19 @@ Make all content centered*/
 }
 
 .not-yet-learned {
-  color: #ff0000;
+  color: #0E5848;
+  font-weight: 600;
 }
 
 .background {
   background: #e7ede1;
 }
 
-.heading-three {
+h3 {
+  text-align: center;
+}
+
+.heading-three-span {
   color: #fff;
   background-color: #0E5848 /* #678d6d */;
 }
@@ -140,7 +142,6 @@ h4 {
 }
 
 /*NEED TO FIX: 
-Make cards next to each other, check project-news-site for solution
 Add overlay to images
 */
 
@@ -184,22 +185,52 @@ ul {
 
 li {
   list-style: none;
+  padding: 5px;
 }
 
 .skill-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 10px;
   justify-items: center;
 }
 
-.skill-box-first {
+.first-row {
   grid-row-start: 1;
+  padding: 10px;
 }
 
-.skill-box-second {
+.second-row {
   grid-row-start: 2;
+  padding: 10px;
+}
+
+.one, .three {
+  grid-column: 2/3;
+}
+
+.two, .four {
+  grid-column: 3/4;
+}
+
+.more {
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.bottom-links {
+  display: flex;
+}
+
+.bottom-links .fa{
+  color: #11423f;
+  border-radius: 50%;
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+  font-size: 25px;
+  padding: 4px 6px;
 }
 
 /*FOOTER*/
@@ -261,5 +292,15 @@ li {
   }
   .project-container {
     padding: 50px;
+  }
+
+  .skill-container {
+
+  }
+}
+
+@media (min-width: 1280px) {
+  .summary {
+    text-indent: 0%;
   }
 }
