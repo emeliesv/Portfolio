@@ -28,14 +28,6 @@
   background-size: cover;
 }
 
-/* .hero img{
-  object-fit: cover;
-  overflow: hidden;
-  height: 70vh;
-  width: 100%;
-} */
-
-
 .profile-picture-container {
   position: absolute;
   overflow: hidden;
@@ -115,35 +107,45 @@ Make all content centered*/
   position: absolute;
   left: 30px;
 }
+
 .main {
   padding: 10px;
-  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .background {
-  background:#E7EDE1 /* #BFC9B6 *//* #d3e5d6 */;
+  background: #e7ede1;
 }
 
-.heading-three{
+.heading-three {
   color: #fff;
-  background-color: #678D6D /* #426E6D *//*  #FA382F */;
+  background-color: #678d6d;
 }
 
 h4 {
-  color: /* #FA382F */#678D6D;
+  color: #678d6d;
 }
 
 /*NEED TO FIX: 
 Make cards next to each other, check project-news-site for solution
 Add overlay to images
 */
+
 .project-container {
   display: flex;
+  justify-items: center;
+  align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .project-card {
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-links {
@@ -151,7 +153,7 @@ Add overlay to images
   color: #000;
 }
 
-.project-images{
+.project-images {
   width: 100%;
 }
 
@@ -169,7 +171,7 @@ Add overlay to images
 .footer {
   display: grid;
   grid-template-rows: auto;
-  background:#11423F;
+  background: #11423f;
   color: #fff;
   justify-content: center;
 }
@@ -189,31 +191,27 @@ Add overlay to images
   .summary {
     text-indent: 6%;
   }
-
   .profile-picture-container {
     height: 270px;
     width: 270px;
   }
-
   .profile-picture-container img {
     width: 270px;
   }
-  
   .header-links {
     right: 25px;
     top: 15px;
   }
-  
   .fa {
     font-size: 35px;
   }
   .top-section {
-   font-size: 25px;
+    font-size: 25px;
   }
 }
 
 @media (min-width: 1024px) {
   .summary {
-    text-indent: 3%;
+    text-indent: 5%;
   }
 }
