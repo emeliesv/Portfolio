@@ -212,8 +212,13 @@ Add overlay to images
   text-decoration: underline;
 }
 
+.other {
+  flex-direction: column;
+}
+
 .other-heading {
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 ul {
@@ -314,9 +319,21 @@ li {
     font-size: 25px;
   }
   .project-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
     padding: 30px;
     gap: 10px;
+  }
+
+  .project-one {
+    grid-column: 1/4;
+  }
+  .project-two {
+    grid-column: 4/7;
+  }
+  .project-three {
+    grid-row: 2;
+    grid-column: 2/6;
   }
 }
 
