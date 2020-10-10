@@ -332,9 +332,7 @@ li {
   .project-container {
     padding: 50px;
   }
-  .hidden {
-    display: none;
-  }
+
 .skill-container {
   grid-template-rows: min-content;
 }
