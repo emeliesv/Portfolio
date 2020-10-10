@@ -199,6 +199,19 @@ Add overlay to images
   color: #000;
 }
 
+.title-span {
+  color: #0E5848;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.arrow {
+  color: #0E5848;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
 .other-heading {
   font-size: 20px;
 }
@@ -345,6 +358,17 @@ li {
 
 @media (min-width: 1280px) {
   .summary {
-    text-indent: 0%;
+    text-indent: 15%;
+  }
+  .line{
+    width: 75px;
+    top: 32px; 
+    left: 100px;
+  }
+  .dot{
+    width: 25px;
+    height: 25px;
+    left: 170px;
+    top: 20px;
   }
 }
