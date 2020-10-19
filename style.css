@@ -342,17 +342,65 @@ li {
 @media (min-width: 1024px) {
   .summary {
     text-indent: 5%;
+    padding: 0 15%;
   }
+
+  .line {
+    width: 23px;
+    top: 36px;
+    left: 155px;
+  }
+
+  .dot {
+    top: 30px;
+    left: 172px
+  }
+
   .main {
     flex-direction: column;
   }
-  .project-container {
-    padding: 50px;
+
+  .tech {
+    padding: 0 15%;
   }
 
-.skill-container {
+  .heading-three-span {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  .other-heading {
+    font-size: 27px;
+  }
+
+  .project-container {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: min-content;
+  }
+
+  .project-card p {
+    font-size: 20px;
+  }
+
+  .project-one, .project-three {
+    grid-column: 3/4;
+  }
+
+  .project-two {
+    grid-column: 5/6;
+  }
+
+  .thoughts {
+    padding: 0 15%;
+  }
+
+  .skill-container {
   grid-template-rows: min-content;
-}
+  }
+  
   .one {
     grid-row: 1;
     grid-column: 1;
@@ -376,14 +424,14 @@ li {
     text-indent: 15%;
   }
   .line{
-    width: 75px;
-    top: 32px; 
-    left: 100px;
+    width: 105px;
+    top: 38px; 
+    left: 193px;
   }
   .dot{
     width: 25px;
     height: 25px;
-    left: 170px;
-    top: 20px;
+    left: 290px;
+    top: 27px;
   }
 }
