@@ -226,7 +226,12 @@ Add overlay to images
 .thoughts {
   display: grid;
   grid-template-columns: min-content;
+  grid-template-rows: min-content;
   justify-content: center;
+}
+
+.thoughts h3 {
+  grid-column: 1/2;
 }
 
 .thoughts .overlay-container {
