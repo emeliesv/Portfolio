@@ -233,6 +233,10 @@ Add overlay to images
   max-width: 250px;
 }
 
+.thoughts .title-span {
+  font-size: 17px;
+}
+
 .article-images {
   max-width: 250px;
 }
