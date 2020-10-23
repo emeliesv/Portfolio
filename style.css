@@ -223,6 +223,20 @@ Add overlay to images
   font-weight: 700;
 }
 
+.thoughts {
+  display: grid;
+  grid-template-columns: min-content;
+  justify-content: center;
+}
+
+.thoughts .overlay-container {
+  max-width: 250px;
+}
+
+.article-images {
+  max-width: 250px;
+}
+
 ul {
   padding: 0;
 }
