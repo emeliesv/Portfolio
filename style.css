@@ -230,10 +230,6 @@ Add overlay to images
   justify-content: center;
 }
 
-.thoughts h3 {
-  grid-column: 1/2;
-}
-
 .thoughts .overlay-container {
   max-width: 250px;
 }
