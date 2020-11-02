@@ -86,6 +86,7 @@
   justify-content: center;
 }
 
+
 .summary {
   position: relative;
   text-indent: 11%;
@@ -97,7 +98,7 @@
   height: 2px;
   background-color: #0E5848;
   position: absolute;
-  top: 32px;
+  top: 72px;
   left: 10px;
 }
 
@@ -112,7 +113,7 @@
 }
 
 .main {
-  padding: 10px;
+  padding: 50px 10px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -141,9 +142,6 @@ h4 {
   color: #0E5848/* #11423f *//* #678d6d */;
 }
 
-/*NEED TO FIX: 
-Add overlay to images
-*/
 .overlay-container {
 	position: relative;
 	width: 100%;
@@ -319,8 +317,14 @@ li {
 
 /*MEDIA QUERIES*/
 @media (min-width: 768px) {
+  .main {
+    padding:  150px 10px;
+  }
   .summary {
     text-indent: 6%;
+  }
+  .line {
+    top: 172px;
   }
   .profile-picture-container {
     height: 270px;
@@ -345,7 +349,6 @@ li {
     padding: 30px;
     gap: 10px;
   }
-
   .project-one {
     grid-column: 1/4;
   }
@@ -369,63 +372,50 @@ li {
     text-indent: 5%;
     padding: 0 15%;
   }
-
   .line {
     width: 23px;
-    top: 36px;
+    top: 185px;
     left: 155px;
   }
-
   .dot {
-    top: 30px;
+    top: 178px;
     left: 172px
   }
-
   .main {
     flex-direction: column;
+    padding:  150px;
   }
-
   .tech {
     padding: 0 15%;
   }
-
   .heading-three-span {
     font-size: 30px;
   }
-
   p {
     font-size: 22px;
   }
-
   .other-heading {
     font-size: 27px;
   }
-
   .project-container {
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: min-content;
   }
-
   .project-card p {
     font-size: 20px;
   }
-
   .project-one, .project-three {
     grid-column: 2/4;
   }
-
   .project-two, .project-four {
     grid-column: 5/7;
   }
-
   .thoughts {
     padding: 0 15%;
   }
-
   .skill-container {
   grid-template-rows: min-content;
   }
-  
   .one {
     grid-row: 1;
     grid-column: 1;
@@ -450,13 +440,13 @@ li {
   }
   .line{
     width: 105px;
-    top: 38px; 
-    left: 193px;
+    top: 185px; 
+    left: 160px;
   }
   .dot{
     width: 25px;
     height: 25px;
-    left: 290px;
-    top: 27px;
+    left: 260px;
+    top: 175px;
   }
 }
