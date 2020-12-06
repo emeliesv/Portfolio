@@ -404,10 +404,10 @@ li {
   .project-card p {
     font-size: 20px;
   }
-  .project-one, .project-three {
+  .project-one, .project-three, .project-five {
     grid-column: 2/4;
   }
-  .project-two, .project-four {
+  .project-two, .project-four, .project-six {
     grid-column: 5/7;
   }
   .thoughts {
@@ -436,7 +436,7 @@ li {
 
 @media (min-width: 1280px) {
   .summary {
-    text-indent: 15%;
+    text-indent: 12%;
   }
   .line{
     width: 105px;
