@@ -1,0 +1,39 @@
+/* @import "tailwindcss/preflight"; */
+@import "tailwindcss";
+
+/* @tailwind utilities;
+ */
+@theme {
+  --font-sans: "Afacade", "sans-serif";
+  --font-display: "Impact", "display";
+  --color-brand-neutral: #fdf4e7;
+  --color-brand: #642f37;
+  --color-brand-secondary: #f2c278;
+}
+
+@font-face {
+  font-family: Afacade;
+  src: url("/Fonts/Afacad/Afacad-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: "Afacade", sans-serif;
+  background-color: #fdf4e7;
+  padding: 10px 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+/*Denna funkar ej, google heydon inclusive card component, klasserna finns där men kortet är inte klickbart*/
+.card_link {
+  position: relative;
+  z-index: 10;
+}
+
+.card_link::after {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
