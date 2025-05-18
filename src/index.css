@@ -16,6 +16,11 @@
   src: url("/Fonts/Afacad/Afacad-VariableFont_wght.ttf");
 }
 
+@font-face {
+  font-family: Impact;
+  src: url("/Fonts/Impact/impact.ttf");
+}
+
 body {
   font-family: "Afacade", sans-serif;
   background-color: #fdf4e7;
