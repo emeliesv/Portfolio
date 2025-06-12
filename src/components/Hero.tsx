@@ -16,7 +16,8 @@ const Hero = (): JSX.Element => {
         <div className="flex flex-col m-6 justify-center h-80">
           <h2 className="font-display text-5xl">I'm Emelie</h2>
           <p>
-            A frontend developer with UX and accessibility competence <br />
+            A UX-designer and frontend developer with accessibility competence
+            <br />
             Based in Stockholm
           </p>
         </div>

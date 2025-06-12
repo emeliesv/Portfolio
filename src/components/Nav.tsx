@@ -1,7 +1,14 @@
-import type { JSX } from "react";
+import { useState, type JSX } from "react";
 import { NavLink } from "react-router";
+import BurgerMenu from "./BurgerMenu";
 
 const Nav = (): JSX.Element => {
+  const [burgerMenuOpen, setBurgerMenuOpen] = useState<boolean>(false);
+
+  const toggleBurgerMenu = () => {
+    setBurgerMenuOpen(!burgerMenuOpen);
+  };
+
   return (
     <nav className="flex w-full justify-end">
       <ul className="flex gap-2.5 ">
