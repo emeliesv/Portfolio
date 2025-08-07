@@ -24,15 +24,12 @@ const CaseStudyLink: React.FC<CaseStudyLinkProps> = ({
       <a
         href={href}
         aria-label={label}
-        className="group grid grid-cols-1 md:grid-cols-2 md:gap-4 items-center"
+        className="group grid grid-cols-1 md:grid-cols-2 md:gap-3 items-center mb-4"
       >
         <img
           src={imageLink}
           alt={alt}
-          className={twMerge(
-            "max-w-[300px] md:max-w-full w-full h-auto mb-4 md:mb-0",
-            customClass
-          )}
+          className={twMerge("max-w-[300px] md:max-w-full h-auto", customClass)}
         />
         <div className="flex flex-col text-center md:text-left">
           <h3 className="font-display text-3xl md:text-5xl group-has-hover:text-brand group-has-hover:underline">

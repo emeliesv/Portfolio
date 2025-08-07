@@ -9,7 +9,7 @@ const Work = (): JSX.Element => {
   return (
     <section className="flex flex-col gap-3">
       <h2 className="font-display text-6xl md:text-8xl m-4">WORK</h2>
-      <div className="flex flex-col p-5 gap-3">
+      <div className="flex flex-col p-5 gap-6">
         <CaseStudyLink
           href="work/passiontointegration"
           label="Read case study for UX-research project From Passion to integration"
