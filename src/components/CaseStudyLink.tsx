@@ -30,7 +30,7 @@ const CaseStudyLink: React.FC<CaseStudyLinkProps> = ({
           src={imageLink}
           alt={alt}
           className={twMerge(
-            "max-w-[300px] md:max-w-full h-auto self-center",
+            "max-w-[300px] md:max-w-full h-auto justify-self-center",
             customClass
           )}
         />
