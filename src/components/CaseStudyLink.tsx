@@ -1,3 +1,5 @@
+import { twMerge } from "tailwind-merge";
+
 type CaseStudyLinkProps = {
   label: string;
   imageLink: string;
@@ -5,6 +7,7 @@ type CaseStudyLinkProps = {
   href: string;
   title: string;
   description: string;
+  customClass?: string;
 };
 
 const CaseStudyLink: React.FC<CaseStudyLinkProps> = ({
@@ -14,19 +17,29 @@ const CaseStudyLink: React.FC<CaseStudyLinkProps> = ({
   alt,
   title,
   description,
+  customClass,
 }) => {
   return (
-    <article className="relative p-4 flex flex-col items-center">
-      <a href={href} aria-label={label} className="group">
+    <article>
+      <a
+        href={href}
+        aria-label={label}
+        className="group grid grid-cols-1 md:grid-cols-2 md:gap-4 items-center"
+      >
         <img
           src={imageLink}
           alt={alt}
-          className="mb-4 max-w-[300px] md:max-w-[550px]"
+          className={twMerge(
+            "max-w-[300px] md:max-w-full w-full h-auto mb-4 md:mb-0",
+            customClass
+          )}
         />
-        <h3 className="font-display text-center text-3xl md:text-5xl group-has-hover:text-brand group-has-hover:underline">
-          {title}
-        </h3>
-        <p>{description}</p>
+        <div className="flex flex-col text-center md:text-left">
+          <h3 className="font-display text-3xl md:text-5xl group-has-hover:text-brand group-has-hover:underline">
+            {title}
+          </h3>
+          <p className="md:max-w-[500px]">{description}</p>
+        </div>
       </a>
     </article>
   );

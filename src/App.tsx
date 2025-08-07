@@ -6,6 +6,7 @@ import Work from "./pages/Work";
 import Jenyf from "./pages/Jenyf";
 import Fokus from "./pages/Fokus";
 import FutureWood from "./pages/FutureWood";
+import PTI from "./pages/PTI";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/work/jenyf" element={<Jenyf />} />
           <Route path="/work/fokus" element={<Fokus />} />
           <Route path="/work/futurewood" element={<FutureWood />} />
+          <Route path="/work/passiontointegration" element={<PTI />} />
         </Routes>
       </main>
     </Router>

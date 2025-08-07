@@ -5,7 +5,7 @@ const About = (): JSX.Element => {
   return (
     <section className="flex flex-col py-8 gap-16">
       <div className="flex flex-col md:flex-row gap-3">
-        <h2 className="font-display text-8xl">ABOUT</h2>
+        <h2 className="font-display text-6xl md:text-8xl">ABOUT</h2>
 
         <div className="flex flex-col gap-3.5 max-w-[600px]">
           <h3 className="text-3xl">
