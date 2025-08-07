@@ -20,7 +20,7 @@ const PTI = (): JSX.Element => {
         From Passion to Integration
       </h2>
 
-      <div className="w-full flex justify-center m-4">
+      <div className="flex justify-center align-center m-4">
         <img
           src={IFLogo}
           alt="Logo for IF Insurances, a blue ellipsis with the letters IF in white"
