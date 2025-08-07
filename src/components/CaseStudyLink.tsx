@@ -29,7 +29,10 @@ const CaseStudyLink: React.FC<CaseStudyLinkProps> = ({
         <img
           src={imageLink}
           alt={alt}
-          className={twMerge("max-w-[300px] md:max-w-full h-auto", customClass)}
+          className={twMerge(
+            "max-w-[300px] md:max-w-full h-auto self-center",
+            customClass
+          )}
         />
         <div className="flex flex-col text-center md:text-left">
           <h3 className="font-display text-3xl md:text-5xl group-has-hover:text-brand group-has-hover:underline">

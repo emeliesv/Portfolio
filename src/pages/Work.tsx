@@ -14,7 +14,7 @@ const Work = (): JSX.Element => {
           href="work/passiontointegration"
           label="Read case study for UX-research project From Passion to integration"
           imageLink={DoubleDiamondResearch}
-          customClass="md:max-w-[450px] md:m-10 self-center"
+          customClass="md:max-w-[450px] md:m-10"
           alt="A whiteboard illustrating the Double Diamond process. Post-it notes with words connected to teamwork is surrounding the Double Diamond illustration."
           title="From Passion to Integration"
           description="A UX case study for a research project on how to integrate accessibility into organisational culture"
